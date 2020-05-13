@@ -1,0 +1,16 @@
+main
+  local
+    integer a;
+    integer b;
+    integer c;
+  do
+    a = 3;
+    b = 2;
+    c = 5;
+    a = a+c;
+    b = b*c;
+    write(a); // 8
+    write(b); // 10
+    write(a + b); // 18
+    write(a - b); // -2
+  end

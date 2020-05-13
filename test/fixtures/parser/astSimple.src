@@ -1,0 +1,21 @@
+QUADRATIC::evaluate(integer y) : float
+  local
+    integer result;
+    integer yeah;
+  do
+    if (arr[j] > arr[j+1]) 
+      then
+        do
+          // swap temp and arr[i]
+          temp = arr[j];
+          arr[j] = arr[j+1];
+          arr[j+1] = temp;
+        end
+      else
+  ;
+  end
+
+main
+  do
+    x[2][3] = 1 + 2 +2;
+  end

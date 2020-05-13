@@ -1,0 +1,39 @@
+// testing and/or
+main
+  local
+    integer x;
+    integer y;
+  do
+    x = (5-7) and 0;
+    write(x); // 0
+
+    write(5 and 4); // 1
+    
+    x = (6/3) or 0;
+    write(x); // 1
+
+    x = (5-5) or (3-3);
+    write(x); // 0
+
+
+    y = (5-5) and 3;
+    write(y); // 0
+
+    y = 5*3*2 and 5-5+5-5; 
+    write(y); // -4
+
+    write(1 or 1); // 1
+    write(0 or 1); // 1
+    write(1 or 0); // 1
+    write(0 or 0); // 0
+
+    write(1 and 1); // 1
+    write(1 and 0); // 0
+    write(0 and 1); // 0
+    write(0 and 0); // 0
+
+    write(not 42 and 5); // 0
+    write(not 42 or 5); // 1
+
+    write(not 0 and not 0); // 1
+  end

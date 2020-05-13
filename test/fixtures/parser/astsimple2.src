@@ -1,0 +1,8 @@
+main
+  local
+    int a;
+    int b;
+  do
+    a = 5;
+    a = 3;
+  end

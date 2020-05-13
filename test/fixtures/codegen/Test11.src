@@ -1,0 +1,20 @@
+testfun(integer n, integer p, integer k) : integer
+  do
+    write(n - 2);
+    write(p * 2);
+    return(k+32);
+  end
+
+main
+  local
+    integer x[2][2];
+  do
+    x[0][0] = 4; 
+    x[0][1] = 9; 
+    x[1][0] = 1; 
+    x[1][1] = -667;
+
+    // Test return val
+    x[0][0] = testfun(x[0][1], x[1][1], 5);
+    write(x[0][0]);
+  end

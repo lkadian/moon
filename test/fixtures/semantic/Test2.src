@@ -1,0 +1,28 @@
+// ====== Class declarations ====== //
+class POLYNOMIAL {
+	private float a;
+};
+
+class LINEAR inherits POLYNOMIAL {
+	private float b;
+	
+	public build(float A, float B) : LINEAR;
+};
+
+// ====== Function Definitions ====== //
+LINEAR::evaluate(float x) : float
+  local
+  do
+    return (0.0);
+  end
+  
+  
+// ====== main ====== //
+main
+  local
+    LINEAR f1;
+    //QUADRATIC f2;
+    float counter;
+    float x;
+  do
+  end

@@ -1,0 +1,11 @@
+// main funtion to test above
+main  
+  local
+    integer x;
+    float y;
+    float z;
+  do
+    x = 5;
+    y = 5.02;
+    z = x + y;
+  end

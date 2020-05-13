@@ -1,0 +1,29 @@
+class A {
+  private integer x;
+  private integer y;
+
+  public init() : void;
+  public print() : void;
+};
+
+// have params
+A::init() : void
+do
+  x = 5;
+  //y = 7;
+end
+
+A::print() : void
+do
+  write(x);
+  write(y);
+end
+
+// testing and/or
+main
+  local
+    A a;
+  do
+    a.init();
+    //a.print();
+  end

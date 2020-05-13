@@ -1,0 +1,22 @@
+factorial(integer n) : integer
+  do
+    if (n == 1)
+    then
+      return (1);
+    else
+        return (n*factorial(n - 1));
+      ;
+  end
+
+  wrapper(integer n) : integer
+  do
+    return (factorial(n));
+  end
+
+main
+  local
+    integer x;
+  do
+    x = wrapper(5);
+    write(x);
+  end

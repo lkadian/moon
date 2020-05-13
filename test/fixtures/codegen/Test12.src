@@ -1,0 +1,23 @@
+fib(integer n) : integer
+  do
+    if (n <= 1)
+    then
+      return (n);
+    else
+      return (fib(n - 1) + fib(n - 2));
+      ;
+  end
+
+main
+  local
+    integer x;
+    integer i;
+  do
+    // 10 first fibonacci numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+    i = 0;
+    while (i <= 10)
+    do
+        write(fib(i));
+        i = i + 1;
+    end;
+  end

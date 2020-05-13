@@ -1,0 +1,29 @@
+func(integer arr[5], integer k) : void
+local
+  integer i;
+do
+  i = 0;
+  while (i < 5)
+  do
+    write(arr[i]);
+    i = i + 1;
+  end;
+  k = k + 1;
+  if (k < 3)
+  then
+    func(arr, k);
+  else;
+end
+
+main  
+  local
+    integer x[5];
+  do
+    x[0] = 1;
+    x[1] = 2;
+    x[2] = 3;
+    x[3] = 4;
+    x[4] = 5;
+
+    func(x, 0);
+  end

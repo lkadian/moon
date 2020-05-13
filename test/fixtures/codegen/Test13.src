@@ -1,0 +1,36 @@
+class MATH {
+  public integer a;
+  public integer b;
+};
+
+class LINEAR inherits MATH {
+  public A c;
+};
+
+class A {
+  public B r;
+  public integer z;
+  public integer x;
+};
+
+class B {
+  public integer y;
+};
+
+
+main
+  local
+    LINEAR f1;
+  do
+    f1.c.x = 3;
+    f1.a = 1;
+    f1.b = -7;
+    f1.c.z = 4;
+    f1.c.r.y = 5;
+    write(f1.a);
+    write(f1.b);
+    write(f1.c.x);
+    write(f1.c.z);
+    write(f1.c.r.y);
+    write(f1.c.z * f1.c.r.y);
+  end

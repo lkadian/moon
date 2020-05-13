@@ -1,0 +1,31 @@
+class Shape {
+  public area() : integer;
+};
+
+class Rectangle inherits Shape {
+  private integer width;
+  private integer height;
+
+  public setWidth(int x) : void;
+  public setHeight(int y) : void;
+  public area() : integer;
+};
+
+Shape::area() : integer
+do
+    return(0);
+end
+
+Rectangle::area() : integer
+do
+  return(width * height);
+end
+
+main
+  local
+    Rectangle r;
+  do
+    r.setWidth(1);
+    r.setHeight(-2);
+    write(r.area());
+  end

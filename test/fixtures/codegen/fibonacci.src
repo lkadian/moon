@@ -1,0 +1,17 @@
+fib(integer n) : integer
+  do
+    if (n <= 1)
+    then
+      return (n);
+    else
+        return (fib(n - 1) + fib(n - 2));
+      ;
+  end
+
+main
+  local
+    integer x;
+  do
+    read(x);
+    write(fib(x));
+  end

@@ -1,0 +1,13 @@
+// "NOT" testing
+main
+  local
+    integer x;
+  do
+    x = not 0;
+    write(not not not 0); // 1
+    write(not not not x); // 0
+    write (not (1-1)); // 1
+    write (not -7*4); // 0
+    write (not -3); // 0
+    write (not -0); // 1
+  end

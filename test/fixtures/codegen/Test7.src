@@ -1,0 +1,25 @@
+factorial(integer n, integer k) : integer
+  do
+    if (n == 1)
+    then
+      do
+        write(k);
+        return (1);
+      end
+    else
+      do
+        write(k);
+        return (n*factorial(n - 1, k));
+      end
+      ;
+  end
+
+main
+  local
+    integer x;
+  do
+    x = factorial(10, -9);
+    write(x);
+    x = factorial(5, -9);
+    write(x);
+  end

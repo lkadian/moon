@@ -1,0 +1,4 @@
+SemanticError: Declared function 'Rectangle::setWidth(int)' has no definition (line 9) 
+SemanticError: Declared function 'Rectangle::setHeight(int)' has no definition (line 10) 
+SemanticError: Undeclared member function 'Rectangle::setWidth(integer)' not found in 'Rectangle' (line 28) 
+SemanticError: Undeclared member function 'Rectangle::setHeight(integer)' not found in 'Rectangle' (line 29) 

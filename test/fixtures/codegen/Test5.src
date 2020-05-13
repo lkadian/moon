@@ -1,0 +1,29 @@
+main
+  local
+    integer a;
+    integer b;
+    integer c;
+  do
+  /*
+    testing while
+  */
+    a = 0;
+    while(a < 10)
+    do
+      write(a);
+      a = a + 1;
+    end;
+
+    while (a >= 1)
+    do
+      write(a);
+      a = a - 1;
+    end;
+    
+    b = -5;
+    while (b < 0)
+    do
+      write(b);
+      b = b + 1;
+    end;
+  end

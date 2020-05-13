@@ -1,0 +1,178 @@
+digraph ast {
+node [shape=record];
+0[label="prog"]
+0 -> 1
+1[label="classList"]
+0 -> 2
+2[label="funcDefList"]
+0 -> 3
+3[label="main"]
+3 -> 4
+4[label="funcBody"]
+4 -> 5
+5[label="varDeclList"]
+5 -> 6
+6[label="varDecl"]
+6 -> 7
+7[label="type | integer"]
+6 -> 8
+8[label="id | x"]
+6 -> 9
+9[label="dimList"]
+5 -> 10
+10[label="varDecl"]
+10 -> 11
+11[label="type | integer"]
+10 -> 12
+12[label="id | y"]
+10 -> 13
+13[label="dimList"]
+5 -> 14
+14[label="varDecl"]
+14 -> 15
+15[label="type | integer"]
+14 -> 16
+16[label="id | z"]
+14 -> 17
+17[label="dimList"]
+4 -> 18
+18[label="statList"]
+18 -> 19
+19[label="assign"]
+19 -> 20
+20[label="var"]
+20 -> 21
+21[label="dataMember"]
+21 -> 22
+22[label="id | y"]
+21 -> 23
+23[label="indiceList"]
+19 -> 24
+24[label="arithExpr"]
+24 -> 25
+25[label="addOp | +"]
+25 -> 26
+26[label="intNum | 1"]
+25 -> 27
+27[label="multOp | *"]
+27 -> 28
+28[label="intNum | 2"]
+27 -> 29
+29[label="intNum | 3"]
+18 -> 30
+30[label="read"]
+30 -> 31
+31[label="var"]
+31 -> 32
+32[label="dataMember"]
+32 -> 33
+33[label="id | x"]
+32 -> 34
+34[label="indiceList"]
+18 -> 35
+35[label="ifStat"]
+35 -> 36
+36[label="relExpr"]
+36 -> 37
+37[label="var"]
+37 -> 38
+38[label="dataMember"]
+38 -> 39
+39[label="id | x"]
+38 -> 40
+40[label="indiceList"]
+36 -> 41
+41[label="relOp | \>"]
+36 -> 42
+42[label="addOp | +"]
+42 -> 43
+43[label="var"]
+43 -> 44
+44[label="dataMember"]
+44 -> 45
+45[label="id | y"]
+44 -> 46
+46[label="indiceList"]
+42 -> 47
+47[label="intNum | 10"]
+35 -> 48
+48[label="statList"]
+48 -> 49
+49[label="write"]
+49 -> 50
+50[label="arithExpr"]
+50 -> 51
+51[label="addOp | +"]
+51 -> 52
+52[label="var"]
+52 -> 53
+53[label="dataMember"]
+53 -> 54
+54[label="id | x"]
+53 -> 55
+55[label="indiceList"]
+51 -> 56
+56[label="intNum | 10"]
+35 -> 57
+57[label="statList"]
+57 -> 58
+58[label="write"]
+58 -> 59
+59[label="arithExpr"]
+59 -> 60
+60[label="addOp | +"]
+60 -> 61
+61[label="var"]
+61 -> 62
+62[label="dataMember"]
+62 -> 63
+63[label="id | x"]
+62 -> 64
+64[label="indiceList"]
+60 -> 65
+65[label="intNum | 1"]
+18 -> 66
+66[label="assign"]
+66 -> 67
+67[label="var"]
+67 -> 68
+68[label="dataMember"]
+68 -> 69
+69[label="id | z"]
+68 -> 70
+70[label="indiceList"]
+66 -> 71
+71[label="arithExpr"]
+71 -> 72
+72[label="intNum | 0"]
+18 -> 73
+73[label="while"]
+73 -> 74
+74[label="relExpr"]
+74 -> 75
+75[label="var"]
+75 -> 76
+76[label="dataMember"]
+76 -> 77
+77[label="id | z"]
+76 -> 78
+78[label="indiceList"]
+74 -> 79
+79[label="relOp | \<="]
+74 -> 80
+80[label="intNum | 10"]
+73 -> 81
+81[label="statList"]
+81 -> 82
+82[label="write"]
+82 -> 83
+83[label="arithExpr"]
+83 -> 84
+84[label="var"]
+84 -> 85
+85[label="dataMember"]
+85 -> 86
+86[label="id | z"]
+85 -> 87
+87[label="indiceList"]
+}

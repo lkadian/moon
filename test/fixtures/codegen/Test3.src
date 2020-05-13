@@ -1,0 +1,39 @@
+main
+  local
+    integer a;
+    integer b;
+    integer c;
+    integer d;
+  do
+    a = 3;
+    b = 2;
+    c = -5;
+    d = a + c; // -2
+    write(5==4); // 0
+    write(5==5); // 1
+    write(a==b); // 0
+    write(a == a); // 1
+
+    write(5 <> 5); // 0
+    write((99-3)*5 <> (32/16)); // 1
+    write(a <> b); // 1
+    write(a <> a); // 0
+
+    write(5 < 9); // 1
+    write(9 < -9); // 0
+    write(9 > -3); // 1
+    write(a > c); // 1
+    write(c > a); // 0
+    write(c < a); // 1
+
+    write(5 >= 5); // 1
+    write(5 >= 6); // 0
+    write(5 >= 3); // 1
+    write(a >= b); // 1
+    write(a >= 1); // 1
+    write(a >= c); // 1
+
+    write(d <= c); // 0
+    write(c <= d); // 1
+    write(d <= d); // 1
+  end

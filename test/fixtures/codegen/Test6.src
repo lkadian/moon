@@ -1,0 +1,19 @@
+factorial(integer n) : integer
+  do
+    if (n == 1)
+    then
+      return (1);
+    else
+        return (n*factorial(n - 1));
+      ;
+  end
+
+main
+  local
+    integer x;
+  do
+    x = factorial(8);
+    write(x);
+    x = factorial(5) / 3 + 7; // 120/3 + 7
+    write(x);
+  end

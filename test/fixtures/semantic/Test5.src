@@ -1,0 +1,26 @@
+fun1(integer x, integer y) : integer
+local
+do
+  return(0);
+end
+
+fun1(integer x, float y) : float
+local
+do
+  return(0.0);
+end
+
+// ====== main ====== //
+main
+  local
+    integer k;
+    integer p;
+    //int i;
+    float j;
+    float r;
+
+  do
+    k = fun1(0, 2) + p;
+    j = fun1(0, 0.2);
+    r = 0.5 * j;
+  end
